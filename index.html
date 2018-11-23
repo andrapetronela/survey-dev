@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Survey</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+</head>
+<body>
+   <header>
+        <h1 id="title">Developer vs insomnia</h1>
+        <p id="description">We would like to find out what kind of relationship is between a web developer and his sleeping hours pattern. Help us discover how many developers can't sleep because they have internet connection.</p>
+   </header>
+    <main id="main">
+        <form id="survey-form">
+            <fieldset id="user-name">
+                <label id="name-label" for="name">
+                   Name:
+                </label>
+                <input type="text" id="name" placeholder="Enter your name" required><br>
+                <label id="email-label" for="email">
+                    Email:&nbsp;
+                </label>
+                <input type="email" id="email" placeholder="Enter your email" required><br>
+                <label id="number-label" for="number">
+                    Age: &nbsp;&nbsp;&nbsp;&nbsp;
+                </label>
+                <input type="number" id="number" placeholder="age" min="1" max="199"><br>
+                <label>Minimum hours of sleep per night:</label>
+                <select id="dropdown">
+                    <option>1 hour</option>
+                    <option>2 hours</option>
+                    <option>3 hours</option>
+                    <option>4 hours</option>
+                    <option>5 hours</option>
+                    <option>6 hours</option>
+                    <option>7 hours</option>
+                    <option>8 hours</option>
+                    <option>9 hours</option>
+                    <option>Wake up!</option>
+                </select>
+            </fieldset>
+            <fieldset id="timing">
+                <label>Favorite coding time:</label>          
+                <input type = "radio"
+                    name = "hours"
+                    id = "morning"
+                    value = "morning"
+                    checked = "checked" />
+                <label for = "morning">morning</label>
+                <input type = "radio"
+                     name = "hours"
+                     id = "afternoon"
+                     value = "afternoon" />
+                <label for="afternoon">afternoon</label>
+                <input type = "radio"
+                     name = "hours"
+                     id = "night"
+                     value = "night" />
+                <label for="night">night</label>
+            </fieldset>
+            <fieldset id="experience">
+               <label>Previous experience in coding:</label><br>
+                <input type="checkbox" name="experience" value="no-experience" class="checkbox">I do not have previous experience in coding.<br>
+                <input type="checkbox" name="experience" value="previous-experience" class="checkbox">I have previous experience.<br>
+                <input type="checkbox" name="experience" value="no-math" class="checkbox">Do we need math to be a programmer?<br>
+            </fieldset>
+            <label id="textarea-label">Please let us know what how do you spend your night if you don't have any bugs in your program.</label><br>
+            <textarea id="textarea"></textarea>
+            <button id="submit">Submit</button>
+    </form>
+    </main>
+    
+</body>
+</html>

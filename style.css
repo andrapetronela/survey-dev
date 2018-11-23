@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --yellow: #ff9f1c;
+    --pink: #e71d36;
+    --blue-light: #2ec4b5;
+    --blue-dark: #011627;
+    --white: #fdfffc;
+    --black: #101010;
+    --grey-dark: #333333;
+}
+
+body {
+    background: var(--blue-dark);
+    font-family: 'Source Sans Pro';
+    display: grid;
+    grid-template-columns: 2vw 1fr 2vw;
+    overflow-x: hidden;
+}
+
+header {
+    grid-column: 1/-1;
+    padding: 3rem 1rem;
+    background: var(--blue-light);
+}
+
+#title {
+    padding-bottom: 2rem;
+    font-weight: 400;
+    font-size: 3rem;
+    text-align: center;
+    color: var(---blue-dark);
+}
+
+#description {
+    text-align: justify;
+    color: var(---blue-dark);
+    width: 50vw;
+    font-size: 1.1rem;
+    display: block;
+    margin: auto;
+}
+
+#main {
+    grid-column: 1/-1;
+    padding: 2rem 5rem;
+    color: var(--white);
+    display: block;
+    margin: auto;
+}
+
+fieldset {
+    border: none;
+    padding: .5rem 0;
+}
+
+input {
+    border: 1px solid var(--pink);
+    background: var(--pink);
+    color: var(--white);
+    border-radius: 4px;
+    height: 1.5rem;
+}
+
+::placeholder {
+    color: var(--white);
+    padding: .5rem;
+}
+
+#user-name {
+    line-height: 220%;
+}
+
+label {
+    color: var(--white);
+}
+
+#dropdown {
+    background: var(--yellow);
+    border: none;
+    border-radius: 4px;
+    color: var(--blue-dark);
+    margin-top: 2rem;
+}
+
+#timing {
+    padding-top: 2rem;
+}
+
+#timing label:not(:first-child) {
+    color: var(--yellow);
+}
+
+#timing label:first-child {
+    padding-right: 1rem;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    height: auto;
+    color: var(--yellow);
+}
+
+input[type="radio"] {
+    transform: translateY(3px);
+}
+
+#experience {
+    color: var(--yellow);
+    padding-top: 2rem;
+}
+
+.checkbox {
+    margin: 1rem;
+}
+
+#textarea {
+    height: 15rem;
+    width: 30rem;
+    background: var(--pink);
+    border: none;
+    border-radius: 4px;
+    margin: 2rem 0;
+    color: var(--white);
+    font-size: 1.2rem;
+}
+
+#textarea-label {
+    width: 80vw;
+}
+
+#submit {
+    display: block;
+    border: none;
+    padding: 1rem 2rem;
+    background: var(--yellow);
+    color: var(--blue-dark);
+    text-transform: uppercase;
+    
+}
